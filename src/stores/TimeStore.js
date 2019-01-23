@@ -1,1 +1,0 @@
-import { observable, computer } from  'mobx'
