@@ -1,9 +1,11 @@
-import { observable } from  'mobx'
+import { observable, action } from  'mobx'
 
 class GeneralStore {
     @observable name
-    @observable time
     @observable numPeople
+    @action handleInput = (name, value) => {
+        this[name] = value
+    } 
 }
 
 export default new GeneralStore()
